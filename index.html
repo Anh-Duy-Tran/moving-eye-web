@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body {
+            background-color: #fff;
+            color: #fff;
+            padding: 0;
+            margin: 0;
+        }
+        main {
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+        #eyes, #eyes img {
+            position: absolute;
+            z-index: 1;
+        }
+        
+        #anchor {
+            /* max-width: 100%;
+            height: auto;
+            width: auto; ie8 */
+            z-index: 2;
+        }
+        button {
+            position: absolute;
+            z-index: 3;
+            top: 10px; 
+            left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <main>
+        <button id="crosseye">Cross Eye</button>
+        <div id = "eyes">
+            <img src="eye.png" class="eye" style=" top: -167px; right: -291px; rotate: 4.9863rad;">
+            <img src="eye.png" class="eye"  style=" top: -167px; right: -158px; rotate: 4.9863rad;">
+            <img src="eye2.png" class="eye" style=" top: 103px; right: -4px; rotate: 4.9863rad;">
+            <img src="eye2.png" class="eye" style=" top: 128px; right: 134px; rotate: 4.9863rad;">
+        </div>
+        <img src="Look_Morty.png" id="anchor">
+    </main>
+
+</body>
+<script src = "app.js"></script>
+</html>
